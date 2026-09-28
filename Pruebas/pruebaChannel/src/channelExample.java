@@ -5,19 +5,19 @@ import java.nio.channels.FileChannel;
 public class channelExample {
     public static void main(String[] args) throws Exception {
 
-        // Channel: connection to the file
+        //channel: conexion con el archivo
         FileChannel channel = new FileInputStream("hello.txt").getChannel();
 
-        // Buffer: memory area where the data will be stored
+        //buffer: area de memoria donde la info estara guardada
         ByteBuffer buffer = ByteBuffer.allocate(1024);
 
-        // Read data from the file INTO the buffer
+        //lee la info del archivo dentro del buffer
         channel.read(buffer);
 
-        // Prepare buffer for reading
+        //prepara el buffer para leer
         buffer.flip();
 
-        // Read data FROM the buffer
+        //lee la info del buffer
         while (buffer.hasRemaining()) {
             System.out.print((char) buffer.get());
         }
