@@ -1,0 +1,5 @@
+When comparing the 3 methods getPath(), getAbsolutePath() and getCanonicalPath()
+the differences are that getPath() shows the rute the user wrote, 
+getAbsolutePath() gets all the directories from C: or / (root) to the current file and
+getCanonicalPath() wipes unncessary direcories to get the fastest way to the file but always from
+C: or / (root)
