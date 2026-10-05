@@ -1,0 +1,3 @@
+The code works, but at the hour to change the permissions to a file in windows
+it only changes the write atributte, because windows doesn't work with the same
+Linux permissions, to modify properly windows files we could use 'icacls' command.
