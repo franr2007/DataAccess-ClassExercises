@@ -1,0 +1,5 @@
+Hello, this is a 40-byte message        
+Java is simple when you understand it     
+Random access files are quite useful      
+This sentence contains exactly forty bytes
+Working with files is easy in Java        
