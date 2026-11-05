@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class ScrambleData {
     public static void main(String[] args) {
-        Random rm = new Random();
+        Random rm = new Random(77777);
 
         if (args.length != 2) {
             System.out.println("Uso: java ScrambleData <origen> <destino>");

@@ -23,6 +23,6 @@ public class ScrambledOutputStream extends FilterOutputStream {
 
     @Override
     public void write(int b) throws IOException {
-        out.write(map[b]);
+        out.write(map[b & 0xFF]);
     }
 }
